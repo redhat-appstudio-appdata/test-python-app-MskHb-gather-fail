@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-python-basic-ci2x
+  namespace: kgrant-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio/user-workload@sha256:67f749103b4875ca61a68fa44c2bafca0abb1e1bb78830b4ead56a2ea468e048
+        name: my-python
+        resources: {}
+status: {}
